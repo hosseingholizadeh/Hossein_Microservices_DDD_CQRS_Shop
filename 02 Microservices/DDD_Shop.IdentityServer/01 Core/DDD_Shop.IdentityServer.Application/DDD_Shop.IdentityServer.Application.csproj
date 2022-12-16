@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\01 Common\01 Core\DDD_Shop.Common.Application\DDD_Shop.Common.Application.csproj" />
+    <ProjectReference Include="..\DDD_Shop.IdentityServer.Domain\DDD_Shop.IdentityServer.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
