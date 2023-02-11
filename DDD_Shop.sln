@@ -83,9 +83,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD_Shop.Infrastructure.Fil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD_Shop.File.Api", "02 Microservices\DDD_Shop.File\03 Endpoints\DDD_Shop.File.Api\DDD_Shop.File.Api.csproj", "{AAB45DC0-E7E7-4578-B616-2BE64259EB41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.IdentityServer.Api", "02 Microservices\DDD_Shop.IdentityServer\03 Endpoints\DDD_Shop.IdentityServer.Api\DDD_Shop.IdentityServer.Api.csproj", "{7C74BEDD-F2CF-4D5C-91D0-3778A3ED439F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD_Shop.IdentityServer.Api", "02 Microservices\DDD_Shop.IdentityServer\03 Endpoints\DDD_Shop.IdentityServer.Api\DDD_Shop.IdentityServer.Api.csproj", "{7C74BEDD-F2CF-4D5C-91D0-3778A3ED439F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.Infrastrucre.IdentityServer.Fake", "02 Microservices\DDD_Shop.IdentityServer\02 Infrastrucres\Data\DDD_Shop.Infrastrucre.IdentityServer.Fake\DDD_Shop.Infrastrucre.IdentityServer.Fake.csproj", "{5BC46F5C-11C3-460A-BFA2-31CD67EECB43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD_Shop.Infrastrucre.IdentityServer.Fake", "02 Microservices\DDD_Shop.IdentityServer\02 Infrastrucres\Data\DDD_Shop.Infrastrucre.IdentityServer.Fake\DDD_Shop.Infrastrucre.IdentityServer.Fake.csproj", "{5BC46F5C-11C3-460A-BFA2-31CD67EECB43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Tests", "04 Tests", "{9D147906-2EBF-45A6-8040-24DA59538EC2}"
 EndProject
@@ -93,15 +93,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Tests", "04 Tests", "{18
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Tests", "04 Tests", "{A81F0826-DB37-4B1D-A57B-D5279AA2892E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.Tests", "02 Microservices\DDD_Shop\04 Tests\DDD_Shop.Tests\DDD_Shop.Tests.csproj", "{C17D29B0-646F-476E-B96F-045FFF294960}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.IdentityServer.Tests", "02 Microservices\DDD_Shop.IdentityServer\04 Tests\DDD_Shop.IdentityServer.Tests\DDD_Shop.IdentityServer.Tests.csproj", "{B78F4484-5605-45A3-9262-FC88208D12A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.File.Tests", "02 Microservices\DDD_Shop.File\04 Tests\DDD_Shop.File.Tests\DDD_Shop.File.Tests.csproj", "{A0C55212-C5A6-440B-A0CE-FCEFF3D0DC23}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Tests", "04 Tests", "{469A255E-4F97-4E36-8420-578675FE4C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.Common.Tests", "01 Common\04 Tests\DDD_Shop.Common.Tests\DDD_Shop.Common.Tests.csproj", "{DD4DD73D-DE24-4790-9D91-3C2B80238F7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.Core.IdentityServer.Contracts", "02 Microservices\DDD_Shop.IdentityServer\01 Core\DDD_Shop.Core.IdentityServer.Contracts\DDD_Shop.Core.IdentityServer.Contracts.csproj", "{6729D3F9-9214-468F-8153-C4FB2E8E6D3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.Core.Contracts", "02 Microservices\DDD_Shop\01 Core\DDD_Shop.Core.Contracts\DDD_Shop.Core.Contracts.csproj", "{48195C69-A03B-425E-8CBA-B9ADB324BA7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Shop.Core.File.Contracts", "02 Microservices\DDD_Shop.File\01 Core\DDD_Shop.Core.File.Contracts\DDD_Shop.Core.File.Contracts.csproj", "{905B4DD6-7F6C-447A-B04C-7D6F4C0584D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -193,22 +191,18 @@ Global
 		{5BC46F5C-11C3-460A-BFA2-31CD67EECB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BC46F5C-11C3-460A-BFA2-31CD67EECB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BC46F5C-11C3-460A-BFA2-31CD67EECB43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C17D29B0-646F-476E-B96F-045FFF294960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C17D29B0-646F-476E-B96F-045FFF294960}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C17D29B0-646F-476E-B96F-045FFF294960}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C17D29B0-646F-476E-B96F-045FFF294960}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B78F4484-5605-45A3-9262-FC88208D12A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B78F4484-5605-45A3-9262-FC88208D12A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B78F4484-5605-45A3-9262-FC88208D12A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B78F4484-5605-45A3-9262-FC88208D12A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0C55212-C5A6-440B-A0CE-FCEFF3D0DC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0C55212-C5A6-440B-A0CE-FCEFF3D0DC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0C55212-C5A6-440B-A0CE-FCEFF3D0DC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0C55212-C5A6-440B-A0CE-FCEFF3D0DC23}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD4DD73D-DE24-4790-9D91-3C2B80238F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD4DD73D-DE24-4790-9D91-3C2B80238F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD4DD73D-DE24-4790-9D91-3C2B80238F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD4DD73D-DE24-4790-9D91-3C2B80238F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6729D3F9-9214-468F-8153-C4FB2E8E6D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6729D3F9-9214-468F-8153-C4FB2E8E6D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6729D3F9-9214-468F-8153-C4FB2E8E6D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6729D3F9-9214-468F-8153-C4FB2E8E6D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48195C69-A03B-425E-8CBA-B9ADB324BA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48195C69-A03B-425E-8CBA-B9ADB324BA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48195C69-A03B-425E-8CBA-B9ADB324BA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48195C69-A03B-425E-8CBA-B9ADB324BA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905B4DD6-7F6C-447A-B04C-7D6F4C0584D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905B4DD6-7F6C-447A-B04C-7D6F4C0584D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905B4DD6-7F6C-447A-B04C-7D6F4C0584D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905B4DD6-7F6C-447A-B04C-7D6F4C0584D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -256,11 +250,10 @@ Global
 		{9D147906-2EBF-45A6-8040-24DA59538EC2} = {2FA59104-27CA-4CD6-9659-B9FE0BE34379}
 		{18F46CEF-44B0-430C-9776-FE360A3AA5FF} = {A4E68857-5BC1-4AF6-BD3A-27E7E4B3AE3D}
 		{A81F0826-DB37-4B1D-A57B-D5279AA2892E} = {6AEF6CB3-1B00-42FC-B6DE-278DA6ACEF87}
-		{C17D29B0-646F-476E-B96F-045FFF294960} = {9D147906-2EBF-45A6-8040-24DA59538EC2}
-		{B78F4484-5605-45A3-9262-FC88208D12A3} = {A81F0826-DB37-4B1D-A57B-D5279AA2892E}
-		{A0C55212-C5A6-440B-A0CE-FCEFF3D0DC23} = {18F46CEF-44B0-430C-9776-FE360A3AA5FF}
 		{469A255E-4F97-4E36-8420-578675FE4C1F} = {DDFA752C-BD2B-4473-BAB1-D9AB39B176D0}
-		{DD4DD73D-DE24-4790-9D91-3C2B80238F7F} = {469A255E-4F97-4E36-8420-578675FE4C1F}
+		{6729D3F9-9214-468F-8153-C4FB2E8E6D3A} = {F88DCA21-2A9D-4D3A-836A-04EAF0D545F3}
+		{48195C69-A03B-425E-8CBA-B9ADB324BA7E} = {B271A300-7125-47C6-BF75-D29B014D715D}
+		{905B4DD6-7F6C-447A-B04C-7D6F4C0584D7} = {4AD28954-D606-4283-A553-38E7F6696FC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FF5B625-AE50-4720-BCC7-A0B7C51A0C1E}
