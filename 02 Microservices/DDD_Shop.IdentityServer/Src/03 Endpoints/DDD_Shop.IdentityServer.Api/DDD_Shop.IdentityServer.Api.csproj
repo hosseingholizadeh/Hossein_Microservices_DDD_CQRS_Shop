@@ -11,9 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\01 Common\03 Endpoints\DDD_Shop.Common.Api\DDD_Shop.Common.Api.csproj" />
     <ProjectReference Include="..\..\01 Core\DDD_Shop.IdentityServer.Application\DDD_Shop.Core.IdentityServer.Application.csproj" />
-    <ProjectReference Include="..\..\02 Infrastrucres\Data\DDD_Shop.Infrastrucre.IdentityServer.SqlServer\DDD_Shop.Infrastrucre.IdentityServer.SqlServer.csproj" />
   </ItemGroup>
 
 </Project>

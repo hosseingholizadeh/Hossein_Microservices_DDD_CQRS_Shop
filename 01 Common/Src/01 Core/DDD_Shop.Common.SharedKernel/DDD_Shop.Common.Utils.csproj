@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Utils\" />
+    <Compile Remove="Extensions\**" />
+    <Compile Remove="Helpers\**" />
+    <Compile Remove="Utils\**" />
+    <EmbeddedResource Remove="Extensions\**" />
+    <EmbeddedResource Remove="Helpers\**" />
+    <EmbeddedResource Remove="Utils\**" />
+    <None Remove="Extensions\**" />
+    <None Remove="Helpers\**" />
+    <None Remove="Utils\**" />
   </ItemGroup>
 
   <ItemGroup>
